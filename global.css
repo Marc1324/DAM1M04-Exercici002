@@ -1,0 +1,119 @@
+body {
+    margin-top: 140px;
+    font-family: sans-serif;
+    background: #fafafa;
+}
+.botones {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 2px solid rgb(118, 35, 243);
+    border-radius: 6px;
+    border-color: rgb(118, 35, 243);
+    background-color: white;
+}
+
+/* Barra fixa superior */
+.barra-fixed {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+}
+.titulo{
+    text-align: center;
+    padding: 80px 20px 40px;
+    border-bottom: 2px solid purple(118, 35, 243);
+}
+.titulo h1{
+    font-size: 40px;
+    margin-bottom:10px ;
+}
+.titulo p {
+    font: size 30px; ;
+    color: violet;
+    margin-bottom: 20px;
+}
+.titulo a {
+    padding: 10px 25px;
+    border: 2px solid purple(118, 35, 243);
+    background: white;
+    color:purple(118, 35, 243);
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  .hero a:hover {
+            background:purple(118, 35, 243);
+            color: white;
+        }
+
+.contenidor {
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 70px;
+    }
+  .caixa {
+      height: 200px;
+      margin: 16px 0;
+      background-color: #e0e0e0;
+      border: 1px solid #999;
+      border-radius: 6px;
+    }
+.sticky-separator {
+      position: sticky;
+      top: var(--sticky-offset);
+      height: 25px;
+      line-height: 25px;
+      padding: 0 10px;
+      font-weight: bold;
+      border-radius: 4px;
+      z-index: 5;
+    }
+.banda_beneficios{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.banda_beneficios span{
+    background-color: blue;
+    color: black;
+}
+.pie{
+    padding: 15px;
+    margin-top: 70px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    flex: 1 1 260px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+    text-align: center;
+    padding: 15px;
+}
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    background-color: white;
+}
