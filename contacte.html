@@ -1,12 +1,46 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
     <link rel="stylesheet" href="global.css">
-       <meta charset="UTF-8">
-       <title>Principal</title>
-      <body>
-         <div class="barra-fixed">
+</head>
+<body>
+    <div class="barra-fixed">
         <a class="botones" href="index.html">Inici</a>
         <a class="botones" href="productes.html">Productes</a>
         <a class="botones" href="contacte.html">Contacte</a>
     </div>
+
+    <div class="container">
+        
+        <div class="formulari">
+            <h2>Contacta amb nosaltres</h2>
+            <form action="#" method="post">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="missatge">Missatge:</label>
+                <textarea id="missatge" name="missatge" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="contacte">
+            <h2>Informació de contacte</h2>
+            <p><strong>Adreça:</strong> Carrer Major 123, Barcelona</p>
+            <p><strong>Horari:</strong> Dilluns a divendres, 9:00 – 18:00</p>
+            <p><strong>Telèfon:</strong> +34 678 123 456</p>
+
+            <div class="mapa"></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.8515861443398!2d2.073759476891735!3d41.35557949796641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4995cdcf4979d%3A0xf7993c3566e6151f!2sInstitut%20Esteve%20Terradas!5e0!3m2!1sca!2ses!4v1776359425381!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

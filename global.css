@@ -117,3 +117,82 @@ body {
     border-radius: 6px;
     background-color: white;
 }
+ /*contacte*/
+ /* --- CONTENEDOR HORIZONTAL (Formulario + Info) --- */
+.container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; /* Centra las dos columnas */
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 100px auto; /* 100px arriba para que no lo tape la barra */
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Las dos cajas (izq y der) */
+.formulari, .contacte {
+    flex: 1; 
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* --- TU BARRA LILA (Ajustada para que no cambie) --- */
+.barra-fixed {
+    background-color: #800080; /* El color lila de tu imagen */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Estilo de tus botones blancos de la foto */
+.botones {
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border: 2px solid #a855f7; /* Borde lila clarito */
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Estilos internos del formulario para que no se desordene */
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #800080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mapa {
+    width: 100%;       
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;   
+    line-height: 0;     
+}
+
+.mapa iframe {
+    width: 100%;       
+    border: none;
+}
